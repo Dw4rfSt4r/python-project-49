@@ -1,14 +1,13 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "y"
-description = "y"
-authors = ["y"]
-license = "y"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
 
 [tool.poetry.dependencies]
-python = "y"
+python = "^3.10"
 
 
 [build-system]
