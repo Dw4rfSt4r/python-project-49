@@ -2,12 +2,15 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Ivan Havinson <havinsonivan@gmail.com>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
 
 
 [build-system]
