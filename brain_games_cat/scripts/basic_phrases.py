@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-user_name = input('May I have your name?')
+user_name = input('Welcome to the Brain Games!\nMay I have your name?')
 
 def welcome():
     print('Hello,', user_name, '!')
@@ -14,15 +14,5 @@ def wrong_answer(a,b):
 
 def good_game():
     print('Congratulations,', user_name)
-
-
-def main():
-    welcome()
-    correct_answer()
-    wrong_answer(a,b)
-    good_game()
-
-if __name__ == '__main__':
-    main()
 
     

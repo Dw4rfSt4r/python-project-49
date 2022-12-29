@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from brain_games import greet
+from brain_games import greet, greeting
 from basic_phrases import user_name, welcome, correct_answer, wrong_answer, good_game
 from random import randint
 
@@ -10,7 +10,6 @@ def is_even(num):
         return 'no'
     else:
         return 'yes'
-
 
 welcome()
 
