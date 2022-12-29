@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from brain_games import greet, greeting
+
 from basic_phrases import user_name, welcome, correct_answer, wrong_answer, good_game
 from random import randint
 
