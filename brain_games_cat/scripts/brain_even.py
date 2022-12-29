@@ -11,12 +11,12 @@ def is_even(num):
     else:
         return 'yes'
 
-welcome()
 
+welcome()
 print('Answer "yes" if the number is even, otherwise answer "no".')
 i = 0
 while i < 3:
-    quiz_number = randint(1,100)
+    quiz_number = randint(1, 100)
     print('Question:', quiz_number)
     quiz_answer = input('Your answer:')
     if quiz_answer == is_even(quiz_number):
