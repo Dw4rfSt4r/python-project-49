@@ -13,7 +13,7 @@ def correct_answer():
 
 
 def wrong_answer(a, b):
-    print(a, 'is wrong answer ;(. Correct answer was "', b , '". Let\'s try again,', user_name, '!')
+    print(a, 'is wrong answer ;(. Correct answer was "', b, '". Let\'s try again,', user_name, '!')
 
 
 def good_game():
