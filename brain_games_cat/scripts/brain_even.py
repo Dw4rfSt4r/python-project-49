@@ -14,10 +14,16 @@ def is_even(num):
 welcome()
 
 print('Answer "yes" if the number is even, otherwise answer "no".')
-quiz_number = randint(1,100)
-print('Question:', quiz_number)
-quiz_answer = input('Your answer:')
-if quiz_answer == is_even(quiz_number):
-    correct_answer()
-else:
-    wrong_answer(quiz_answer, is_even(quiz_number))
+i = 0
+while i < 3:
+    quiz_number = randint(1,100)
+    print('Question:', quiz_number)
+    quiz_answer = input('Your answer:')
+    if quiz_answer == is_even(quiz_number):
+        correct_answer()
+        i = i + 1
+    else:
+        wrong_answer(quiz_answer, is_even(quiz_number))
+        i = 5
+if i == 3:
+    good_game()
