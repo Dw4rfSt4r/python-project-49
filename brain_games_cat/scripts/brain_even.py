@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 
-
-from basic_phrases import user_name, welcome, correct_answer, wrong_answer, good_game
 from random import randint
+from game_engine import user_name, welcome, check_solution, good_game
 
 
-def is_even(num):
+def is_even(num): #  even? yes or no - quiz_answer
     if num % 2:
-        return 'no'
+        correct_answer = 'no'
+        return correct_answer
     else:
-        return 'yes'
+        correct_answer = 'yes'
+        return correct_answer
 
 
 welcome()
@@ -18,12 +19,8 @@ i = 0
 while i < 3:
     quiz_number = randint(1, 100)
     print('Question:', quiz_number)
-    quiz_answer = input('Your answer:')
-    if quiz_answer == is_even(quiz_number):
-        correct_answer()
-        i = i + 1
-    else:
-        wrong_answer(quiz_answer, is_even(quiz_number))
-        i = 5
-if i == 3:
+    user_answer = str(input('Your answer:'))
+    correct_answer = is_even(quiz_number)
+    i = i + check_solution(user_answer, correct_answer) #check_solution() returns 1 or 5
+if i == 3:    
     good_game()
