@@ -2,7 +2,7 @@
 
 
 user_name = input('Welcome to the Brain Games!\nMay I have your name?')
-#user_answer = input('Your answer:')
+
 
 def welcome():
     print('Hello,', user_name, '!')

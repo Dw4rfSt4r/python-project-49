@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from random import randint
-from game_engine import user_name, welcome, check_solution, good_game
+import brain_games_cat.scripts.game_engine
 
 
 def is_even(num): #  even? yes or no - quiz_answer
@@ -12,15 +12,20 @@ def is_even(num): #  even? yes or no - quiz_answer
         correct_answer = 'yes'
         return correct_answer
 
+def main():
+    brain_games_cat.scripts.game_engine.user_name
+    brain_games_cat.scripts.game_engine.welcome()
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+    i = 0
+    while i < 3:
+        quiz_number = randint(1, 100)
+        print('Question:', quiz_number)
+        user_answer = str(input('Your answer:'))
+        correct_answer = is_even(quiz_number)
+        i = i + brain_games_cat.scripts.game_engine.check_solution(user_answer, correct_answer) #check_solution() returns 1 or 5
+    if i == 3:    
+        brain_games_cat.scripts.game_engine.good_game()
 
-welcome()
-print('Answer "yes" if the number is even, otherwise answer "no".')
-i = 0
-while i < 3:
-    quiz_number = randint(1, 100)
-    print('Question:', quiz_number)
-    user_answer = str(input('Your answer:'))
-    correct_answer = is_even(quiz_number)
-    i = i + check_solution(user_answer, correct_answer) #check_solution() returns 1 or 5
-if i == 3:    
-    good_game()
+
+if __name__ == '__main__':
+    main()
