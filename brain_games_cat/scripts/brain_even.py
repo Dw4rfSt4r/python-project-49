@@ -26,6 +26,5 @@ def main():
     if i == 3:    
         brain_games_cat.scripts.game_engine.good_game()
 
-
 if __name__ == '__main__':
     main()
