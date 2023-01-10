@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-
+import operator
 from random import randint
 import brain_games_cat.scripts.game_engine
+
 
 
 def main():
@@ -12,20 +13,24 @@ def main():
     round_number = 3
     while i < round_number:
         num_1 = randint(1, 100)
-        num_2 = randint(1,100)
-        print('What is the result of the expression?','\nQusestion: ', num_1, '+', num_2)
-
+        num_2 = randint(1, 100)
+        addition = operator.add(num_1, num_2)
+        multiplication = operator.mul(num_1, num_2)
+        subtraction = operator.sub(num_1, num_2)
+        question_var = [addition, multiplication, subtraction]
+        correct_answer = question_var[randint(0, 2)]
+        if correct_answer == question_var[0]:
+            print('What is the result of the expression?','\nQusestion: ', num_1, '+', num_2)
+        elif correct_answer == question_var[1]:
+            print('What is the result of the expression?','\nQusestion: ', num_1, '*', num_2)
+        elif correct_answer == question_var[2]:
+            print('What is the result of the expression?','\nQusestion: ', num_1, '-', num_2)
         user_answer = input()
-        correct_answer = str(sum([num_1, num_2]))
-        if user_answer == correct_answer:
-            print('Correct!')
-            i = i + 1
-            if i == round_number:
-                brain_games_cat.scripts.game_engine.good_game()
-        else:
-            print(user_answer, 'is wrong answer ;(. Correct answer was "', correct_answer, '". Let\'s try again,', brain_games_cat.scripts.game_engine.user_name
-        , '!')
-            i = i + round_number + 1
+        brain_games_cat.scripts.game_engine.counter = brain_games_cat.scripts.game_engine.check_solution(user_answer, str(correct_answer))
+        i = i + brain_games_cat.scripts.game_engine.counter #check_solution() returns counter == 1 or counter == 5
+    if i == round_number:    
+        brain_games_cat.scripts.game_engine.good_game()
+        
             
 if __name__ == '__main__':
     main()
