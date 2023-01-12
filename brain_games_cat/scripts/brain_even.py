@@ -21,10 +21,10 @@ def main():
     while i < round_number:
         quiz_number = randint(1, 100)
         print('Question:', quiz_number)
-        user_answer = str(input('Your answer:'))
         correct_answer = is_even(quiz_number)
-        brain_games_cat.scripts.game_engine.counter = brain_games_cat.scripts.game_engine.check_solution(user_answer, correct_answer)
-        i = i + brain_games_cat.scripts.game_engine.counter #check_solution() returns 1 or 5
+        user_answer = input('Your answer:')
+        counter = brain_games_cat.scripts.game_engine.check_solution(user_answer, str(correct_answer))
+        i = i + counter #check_solution() returns counter (1 or 5)
     if i == round_number:    
         brain_games_cat.scripts.game_engine.good_game()
 

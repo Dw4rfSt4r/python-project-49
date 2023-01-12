@@ -24,7 +24,9 @@ def good_game():
 
 def main():
     welcome()
-    check_solution()
+    check_solution()        
+    counter = check_solution()
+
 
 
 if __name__ == '__main__':
