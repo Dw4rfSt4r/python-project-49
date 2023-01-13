@@ -9,12 +9,12 @@ def welcome():
 
 def check_solution(user_answer, correct_answer):
     
-    if user_answer == correct_answer:
+    if user_answer == str(correct_answer):
         print('Correct!')
         counter = 1
         return counter
     else:
-        print(user_answer, 'is wrong answer ;(. Correct answer was "', correct_answer, '". Let\'s try again,', user_name, '!')
+        print("'" + user_answer + "'", "is wrong answer ;(. Correct answer was '" + correct_answer + "'. Let\'s try again, " + user_name + ' !')
         counter = 5
         return counter
 

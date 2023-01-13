@@ -6,8 +6,10 @@ brain-even: #run brain_even
 	poetry run brain-even
 brain-calc: #run brain-calc
 	poetry run brain-calc
-brain_gcd: #run brain-gcd
+brain-gcd: #run brain-gcd
 	poetry run brain-gcd
+brain-progression: #run brain-progression
+	poetry run brain-progression
 build: #build package
 	poetry build
 publish: #publish package
