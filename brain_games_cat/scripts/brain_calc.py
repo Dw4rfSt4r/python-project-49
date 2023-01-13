@@ -26,7 +26,7 @@ def main():
         elif correct_answer == question_var[2]:
             print('What is the result of the expression?','\nQusestion: ', num_1, '-', num_2)
         user_answer = input()
-        counter = brain_games_cat.scripts.game_engine.check_solution(user_answer, str(correct_answer))
+        counter = brain_games_cat.scripts.game_engine.check_solution(user_answer, correct_answer)
         i = i + counter #check_solution() returns counter == 1 or counter == 5
     if i == round_number:    
         brain_games_cat.scripts.game_engine.good_game()

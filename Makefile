@@ -1,6 +1,6 @@
 install: #toggle env
 	poetry install
-brain-games: #run brain_games
+brain-games: #run brain-games
 	poetry run brain-games
 brain-even: #run brain_even
 	poetry run brain-even
@@ -10,6 +10,8 @@ brain-gcd: #run brain-gcd
 	poetry run brain-gcd
 brain-progression: #run brain-progression
 	poetry run brain-progression
+brain-prime: #run brain-prime
+	poetry run brain-prime
 build: #build package
 	poetry build
 publish: #publish package
@@ -19,4 +21,4 @@ package-install: #pip install #--force-reinstall
 package-reinstall: #reinstall package
 	python3 -m pip install --force-reinstall dist/*.whl
 lint: #run flake8 brain_games_cat
-	poetry run flake8 brain_games_catbrain
+	poetry run flake8 brain_games_cat
