@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 from random import randint
-import brain_games_cat.scripts.game_engine
+from brain_games_cat.scripts.game_engine import user_name, welcome, check_solution, good_game
 
 
 def main():
-    brain_games_cat.scripts.game_engine.user_name
-    brain_games_cat.scripts.game_engine.welcome()
+    user_name
+    welcome()
     i = 0
     round_number = 3
     while i < round_number:
@@ -25,10 +25,10 @@ def main():
             progression_string = progression_string + ' ' + str(element)
         print('What number is missing in the progression?\nQuestion:' + progression_string)
         user_answer = input('Your answer: ')
-        counter = brain_games_cat.scripts.game_engine.check_solution(user_answer, correct_answer)
+        counter = check_solution(user_answer, correct_answer)
         i = i + counter  # check_solution() returns counter == 1 or counter == 5
     if i == round_number:
-        brain_games_cat.scripts.game_engine.good_game()
+        good_game()
 
 
 if __name__ == '__main__':
