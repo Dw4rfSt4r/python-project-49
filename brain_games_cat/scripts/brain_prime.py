@@ -6,7 +6,7 @@ import brain_games_cat.scripts.game_engine
 def main():
     brain_games_cat.scripts.game_engine.user_name
     brain_games_cat.scripts.game_engine.welcome()
-    print('Answer "yes" if given number is prime. Otherwise answer "no"')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     i = 0
     round_number = 3
     correct_answer = ''
