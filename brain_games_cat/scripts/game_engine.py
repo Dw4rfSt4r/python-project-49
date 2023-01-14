@@ -23,7 +23,7 @@ def check_solution(user_answer, correct_answer):
 
 
 def good_game():
-    print('Congratulations,', user_name)
+    print('Congratulations, ' + user_name + '!')
 
 
 def main():
