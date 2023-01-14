@@ -22,7 +22,7 @@ def main():
         if correct_answer == question_var[0]:
             print('Qusestion: ', num_1, '+', num_2)
         elif correct_answer == question_var[1]:
-            print('Qusestion: ', num_1, '*', num_2)
+            print('Qusestion:', num_1, '*', num_2)
         elif correct_answer == question_var[2]:
             print('Qusestion: ', num_1, '-', num_2)
         user_answer = input()

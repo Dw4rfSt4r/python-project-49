@@ -6,7 +6,7 @@ counter = 0
 
 
 def welcome():
-    print('Hello,', user_name, '!')
+    print('Hello, ' + user_name + '!')
 
 
 def check_solution(user_answer, correct_answer):
