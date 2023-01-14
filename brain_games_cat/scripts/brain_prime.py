@@ -2,12 +2,11 @@
 from random import randint
 import brain_games_cat.scripts.game_engine
 
+
 def main():
     brain_games_cat.scripts.game_engine.user_name
     brain_games_cat.scripts.game_engine.welcome()
-    
     print('Answer "yes" if the number is prime, otherwise answer "no".')
-
     i = 0
     round_number = 3
     correct_answer = ''
@@ -22,12 +21,10 @@ def main():
         print('Question:', num)
         user_answer = input('Your answer:')
         counter = brain_games_cat.scripts.game_engine.check_solution(user_answer, correct_answer)
-        i = i + counter #check_solution() returns counter (1 or 5)
-    if i == round_number:    
+        i = i + counter  # check_solution() returns counter (1 or 5)
+    if i == round_number:
         brain_games_cat.scripts.game_engine.good_game()
-    
-    
 
-            
+
 if __name__ == '__main__':
     main()

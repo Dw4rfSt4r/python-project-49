@@ -4,7 +4,6 @@ from random import randint
 import brain_games_cat.scripts.game_engine
 
 
-
 def main():
     brain_games_cat.scripts.game_engine.user_name
     brain_games_cat.scripts.game_engine.welcome()
@@ -20,17 +19,18 @@ def main():
         question_var = [addition, multiplication, subtraction]
         correct_answer = question_var[randint(0, 2)]
         if correct_answer == question_var[0]:
-            print('What is the result of the expression?','\nQusestion: ', num_1, '+', num_2)
+            print('What is the result of the expression?', '\nQusestion: ', num_1, '+', num_2)
         elif correct_answer == question_var[1]:
-            print('What is the result of the expression?','\nQusestion: ', num_1, '*', num_2)
+            print('What is the result of the expression?', '\nQusestion: ', num_1, '*', num_2)
         elif correct_answer == question_var[2]:
-            print('What is the result of the expression?','\nQusestion: ', num_1, '-', num_2)
+            print('What is the result of the expression?', '\nQusestion: ', num_1, '-', num_2)
         user_answer = input()
         counter = brain_games_cat.scripts.game_engine.check_solution(user_answer, correct_answer)
-        i = i + counter #check_solution() returns counter == 1 or counter == 5
-    if i == round_number:    
+        # check_solution() returns counter == 1 or counter == 5
+        i = i + counter
+    if i == round_number:
         brain_games_cat.scripts.game_engine.good_game()
-        
-            
+
+
 if __name__ == '__main__':
     main()

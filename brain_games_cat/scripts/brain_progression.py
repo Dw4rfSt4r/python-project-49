@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
-import operator
 from random import randint
 import brain_games_cat.scripts.game_engine
-
 
 
 def main():
@@ -19,7 +17,6 @@ def main():
         for element in range(rand_progression_start, rand_progression_stop):
             rand_progression.append(element + step)
             step = step + step_modificator
-    
         correct_element = randint(0, 9)
         correct_answer = str(rand_progression[correct_element])
         rand_progression[correct_element] = '..'
@@ -29,9 +26,10 @@ def main():
         print('What number is missing in the progression?\nQuestion:' + progression_string)
         user_answer = input('Your answer: ')
         counter = brain_games_cat.scripts.game_engine.check_solution(user_answer, correct_answer)
-        i = i + counter #check_solution() returns counter == 1 or counter == 5
-    if i == round_number:    
+        i = i + counter  # check_solution() returns counter == 1 or counter == 5
+    if i == round_number:
         brain_games_cat.scripts.game_engine.good_game()
+
 
 if __name__ == '__main__':
     main()
