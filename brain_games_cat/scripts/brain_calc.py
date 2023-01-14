@@ -18,12 +18,13 @@ def main():
         subtraction = operator.sub(num_1, num_2)
         question_var = [addition, multiplication, subtraction]
         correct_answer = question_var[randint(0, 2)]
+        print('What is the result of the expression?')
         if correct_answer == question_var[0]:
-            print('What is the result of the expression?', '\nQusestion: ', num_1, '+', num_2)
+            print('Qusestion: ', num_1, '+', num_2)
         elif correct_answer == question_var[1]:
-            print('What is the result of the expression?', '\nQusestion: ', num_1, '*', num_2)
+            print('Qusestion: ', num_1, '*', num_2)
         elif correct_answer == question_var[2]:
-            print('What is the result of the expression?', '\nQusestion: ', num_1, '-', num_2)
+            print('Qusestion: ', num_1, '-', num_2)
         user_answer = input()
         counter = brain_games_cat.scripts.game_engine.check_solution(user_answer, correct_answer)
         # check_solution() returns counter == 1 or counter == 5
