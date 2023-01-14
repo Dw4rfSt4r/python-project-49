@@ -11,6 +11,7 @@ def welcome():
 
 def check_solution(user_answer, correct_answer):
     correct_answer = str(correct_answer)
+
     if user_answer == (correct_answer):
         print('Correct!')
         counter = 1
