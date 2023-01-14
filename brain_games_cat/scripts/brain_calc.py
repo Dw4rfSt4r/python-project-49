@@ -20,7 +20,7 @@ def main():
         correct_answer = question_var[randint(0, 2)]
         print('What is the result of the expression?')
         if correct_answer == question_var[0]:
-            print('Qusestion: ', num_1, '+', num_2)
+            print('Qusestion: ', num_1, '\+', num_2)
         elif correct_answer == question_var[1]:
             print('Qusestion:', num_1, '*', num_2)
         elif correct_answer == question_var[2]:
