@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
 from random import randint
-from brain_games_cat.scripts.game_engine import user_name, welcome, check_solution, good_game
+from brain_games_cat.scripts.game_engine import user_name, welcome
+from brain_games_cat.scripts.game_engine import check_solution, good_game
+
+
+def is_prime(num):
+    correct_answer = 'yes'
+    for element in range(2, int(num ** 1 / 2)):
+        if num % element == 0:
+            correct_answer = 'no'
+    return correct_answer
 
 
 def main():
@@ -9,15 +18,10 @@ def main():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     i = 0
     round_number = 3
-    correct_answer = ''
     while i < round_number:
-        num = randint(2, 3571)
-        if num == 2 or num == 3 or num == 5 or num == 7 or num == 11 or num == 13:
-            correct_answer = 'yes'
-        elif num % 2 == 0 or num % 3 == 0 or num % 5 == 0 or num % 7 == 0 or num % 11 == 0 or num % 13 == 0:
-            correct_answer = 'no'
-        else:
-            correct_answer = 'yes'
+        correct_answer = ''
+        num = randint(2, 3391)
+        correct_answer = is_prime(num)
         print('Question:', num)
         user_answer = input('Your answer:')
         counter = check_solution(user_answer, correct_answer)

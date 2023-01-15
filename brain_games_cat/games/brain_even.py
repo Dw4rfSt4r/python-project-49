@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from random import randint
-from brain_games_cat.scripts.game_engine import user_name, welcome, check_solution, good_game
+from brain_games_cat.scripts.game_engine import user_name, welcome
+from brain_games_cat.scripts.game_engine import check_solution, good_game
 
 
 def is_even(num):

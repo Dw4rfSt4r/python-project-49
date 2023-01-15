@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from random import randint
-from brain_games_cat.scripts.game_engine import user_name, welcome, check_solution, good_game
+from brain_games_cat.scripts.game_engine import user_name, welcome
+from brain_games_cat.scripts.game_engine import check_solution, good_game
 
 
 def main():
@@ -23,7 +24,8 @@ def main():
         progression_string = ''
         for element in rand_progression:
             progression_string = progression_string + ' ' + str(element)
-        print('What number is missing in the progression?\nQuestion:' + progression_string)
+        print('What number is missing in the progression?')
+        print('Question:' + progression_string)
         user_answer = input('Your answer: ')
         counter = check_solution(user_answer, correct_answer)
         i = i + counter  # check_solution() returns counter == 1 or counter == 5

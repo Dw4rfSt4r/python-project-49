@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 from math import gcd
 from random import randint
-from brain_games_cat.scripts.game_engine import user_name, welcome, check_solution, good_game
+from brain_games_cat.scripts.game_engine import user_name, welcome
+from brain_games_cat.scripts.game_engine import check_solution, good_game
 
 
 def main():
@@ -14,7 +15,8 @@ def main():
         num_1 = randint(1, 100)
         num_2 = randint(1, 100)
         correct_answer = gcd(num_1, num_2)
-        print('Find the greatest common divisor of given numbers.\nQuestion:', num_1, num_2)
+        print('Find the greatest common divisor of given numbers.')
+        print('Question:', num_1, num_2)
         user_answer = input('Your answer: ')
         counter = check_solution(user_answer, correct_answer)
         i = i + counter  # check_solution() returns counter == 1 or counter == 5
