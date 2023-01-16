@@ -27,9 +27,9 @@ def main():
         elif correct_answer == question_var[2]:
             print('Question:', num_1, '-', num_2)
         user_answer = input()
-        counter = check_solution(user_answer, correct_answer)
-        # check_solution() returns counter == 1 or counter == 5
-        i = i + counter
+        counter_breaker = check_solution(user_answer, correct_answer)
+        # check_solution() returns counter_breaker == 1 or counter_breaker == 5
+        i = i + counter_breaker
     if i == round_number:
         good_game()
 

@@ -18,8 +18,9 @@ def main():
         print('Find the greatest common divisor of given numbers.')
         print('Question:', num_1, num_2)
         user_answer = input('Your answer: ')
-        counter = check_solution(user_answer, correct_answer)
-        i = i + counter  # check_solution() returns counter == 1 or counter == 5
+        counter_breaker = check_solution(user_answer, correct_answer)
+        i = i + counter_breaker
+        # check_solution() returns counter_breaker == 1 or counter_breaker == 42
     if i == round_number:
         good_game()
 

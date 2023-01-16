@@ -2,7 +2,7 @@
 
 
 user_name = input('Welcome to the Brain Games!\nMay I have your name?')
-counter = 0
+counter_breaker = 0
 
 
 def welcome():
@@ -14,13 +14,13 @@ def check_solution(user_answer, correct_answer):
 
     if user_answer == (correct_answer):
         print('Correct!')
-        counter = 1
-        return counter
+        counter_breaker = 1
+        return counter_breaker
     else:
         print("'" + user_answer + "'", "is wrong answer ;(. Correct answer was \
-              '" + correct_answer + "'. Let\'s try again, " + user_name + '!')
-        counter = 5
-        return counter
+'" + correct_answer + "'. Let\'s try again, " + user_name + '!')
+        counter_breaker = 42
+        return counter_breaker
 
 
 def good_game():

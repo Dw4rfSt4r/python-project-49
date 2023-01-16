@@ -27,8 +27,9 @@ def main():
         print('What number is missing in the progression?')
         print('Question:' + progression_string)
         user_answer = input('Your answer: ')
-        counter = check_solution(user_answer, correct_answer)
-        i = i + counter  # check_solution() returns counter == 1 or counter == 5
+        counter_breaker = check_solution(user_answer, correct_answer)
+        i = i + counter_breaker
+        # check_solution() returns counter_breaker == 1 or counter_breaker == 42
     if i == round_number:
         good_game()
 
