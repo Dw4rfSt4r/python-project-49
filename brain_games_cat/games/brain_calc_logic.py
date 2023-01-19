@@ -9,15 +9,16 @@ def start_calc():
     operators = ['+', '-', '*']
     for current_operator in operators:
         current_operator = operators[randint(0, 2)]
+        break
     if current_operator == '+':
         calculations = operator.add(num_1, num_2)
         print('Question:', num_1, '+', num_2)
     elif current_operator == '-':
-        calculations = operator.mul(num_1, num_2)
+        print('Question:', num_1, '-', num_2)
+        calculations = operator.sub(num_1, num_2)
     elif current_operator == '*':
         print('Question:', num_1, '*', num_2)
-        calculations = operator.sub(num_1, num_2)
-        print('Question:', num_1, '-', num_2)
+        calculations = operator.mul(num_1, num_2)
     correct_answer = calculations
     return correct_answer
 
