@@ -13,7 +13,7 @@ def welcome():
     print('Hello, ' + user_name + '!')
 
 
-rules = ['What is the result of the expression?', '\
+RULES = ['What is the result of the expression?', '\
 Answer "yes" if the number is even, otherwise answer "no".', '\
 Find the greatest common divisor of given numbers.', '\
 Answer "yes" if given number is prime. Otherwise answer "no".', '\
@@ -22,15 +22,15 @@ What number is missing in the progression?']
 
 def print_rules(game):
     if game == 'brain_gcd':
-        print(rules[2])
+        print(RULES[2])
     elif game == 'brain_prime':
-        print(rules[3])
+        print(RULES[3])
     elif game == 'brain_calc':
-        print(rules[0])
+        print(RULES[0])
     elif game == 'brain_progression':
-        print(rules[4])
+        print(RULES[4])
     elif game == 'brain_even':
-        print(rules[1])
+        print(RULES[1])
 
 
 def choose_correct_answer(game):
