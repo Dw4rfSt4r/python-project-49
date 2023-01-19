@@ -4,8 +4,9 @@ from brain_games_cat.games.brain_calc_logic import start_calc
 from brain_games_cat.games.brain_gcd_logic import start_gcd
 from brain_games_cat.games.brain_prime_logic import start_prime
 from brain_games_cat.games.brain_progression_logic import start_progression
+import prompt
 
-user_name = input('Welcome to the Brain Games!\nMay I have your name?')
+user_name = prompt.string('Welcome to the Brain Games!\nMay I have your name?')
 
 
 def welcome():
@@ -61,7 +62,7 @@ def print_is_correct_iterate(user_answer, correct_answer):
 
 
 def get_user_answer():
-    user_answer = input('Your answer:')
+    user_answer = prompt.string('Your answer:')
     return user_answer
 
 

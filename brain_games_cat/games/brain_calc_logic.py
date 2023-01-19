@@ -6,17 +6,19 @@ from random import randint
 def start_calc():
     num_1 = randint(1, 100)
     num_2 = randint(1, 100)
-    addition = operator.add(num_1, num_2)
-    multiplication = operator.mul(num_1, num_2)
-    subtraction = operator.sub(num_1, num_2)
-    question_var = [addition, multiplication, subtraction]
-    correct_answer = question_var[randint(0, 2)]
-    if correct_answer == question_var[0]:
+    operators = ['+', '-', '*']
+    for current_operator in operators:
+        current_operator = operators[randint(0, 2)]
+    if current_operator == '+':
+        calculations = operator.add(num_1, num_2)
         print('Question:', num_1, '+', num_2)
-    elif correct_answer == question_var[1]:
+    elif current_operator == '-':
+        calculations = operator.mul(num_1, num_2)
+    elif current_operator == '*':
         print('Question:', num_1, '*', num_2)
-    elif correct_answer == question_var[2]:
+        calculations = operator.sub(num_1, num_2)
         print('Question:', num_1, '-', num_2)
+    correct_answer = calculations
     return correct_answer
 
 
