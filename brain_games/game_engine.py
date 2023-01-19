@@ -86,10 +86,9 @@ def cycle_game(game):
 
 
 def main():
-    game = 'brain_even'
     user_name
     welcome
-    cycle_game(game)
+    cycle_game()
 
 
 if __name__ == '__main__':
