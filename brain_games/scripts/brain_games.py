@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from brain_games_cat import cli
+from brain_games import cli
 
 greeting = 'Welcome to the Brain Games! '
 

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-from brain_games_cat.games.brain_even_logic import start_even
-from brain_games_cat.games.brain_calc_logic import start_calc
-from brain_games_cat.games.brain_gcd_logic import start_gcd
-from brain_games_cat.games.brain_prime_logic import start_prime
-from brain_games_cat.games.brain_progression_logic import start_progression
+from brain_games.games.brain_even_logic import start_even
+from brain_games.games.brain_calc_logic import start_calc
+from brain_games.games.brain_gcd_logic import start_gcd
+from brain_games.games.brain_prime_logic import start_prime
+from brain_games.games.brain_progression_logic import start_progression
 import prompt
 
 user_name = prompt.string('Welcome to the Brain Games!\nMay I have your name?')
