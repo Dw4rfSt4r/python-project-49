@@ -55,8 +55,8 @@ def print_is_correct_iterate(user_answer, correct_answer):
         counter_breaker = True
         return counter_breaker
     else:
-        print("'" + user_answer + "'", "is wrong answer ;(. Correct answer was \
-'" + correct_answer + "'. Let\'s try again, " + user_name + '!')
+        print(f'{user_answer} is wrong answer ;(. Correct answer was \
+{correct_answer}. Let\'s try again, {user_name} !')
         counter_breaker = False
         return counter_breaker
 
@@ -67,7 +67,7 @@ def get_user_answer():
 
 
 def compliment():
-    print('Congratulations, ' + user_name + '!')
+    print(f'Congratulations, {user_name}!')
 
 
 def cycle_game(game):
