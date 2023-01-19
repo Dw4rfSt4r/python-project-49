@@ -56,7 +56,7 @@ def print_is_correct_iterate(user_answer, correct_answer):
         return counter_breaker
     else:
         print(f'{user_answer} is wrong answer ;(. Correct answer was \
-{correct_answer}. Let\'s try again, {user_name} !')
+{correct_answer}. Let\'s try again, {user_name}!')
         counter_breaker = False
         return counter_breaker
 
