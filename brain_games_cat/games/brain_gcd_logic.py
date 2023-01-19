@@ -7,7 +7,6 @@ def start_gcd():
     num_1 = randint(1, 100)
     num_2 = randint(1, 100)
     correct_answer = gcd(num_1, num_2)
-    print('Find the greatest common divisor of given numbers.')
     print('Question:', num_1, num_2)
     return correct_answer
 

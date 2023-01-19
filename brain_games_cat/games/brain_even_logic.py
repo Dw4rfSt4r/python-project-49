@@ -4,7 +4,6 @@ from random import randint
 
 def start_even():
     num = randint(1, 100)
-    print('Answer "yes" if the number is even, otherwise answer "no".')
     print('Question:', num)
     if num % 2 == 0:
         correct_answer = 'yes'

@@ -16,7 +16,6 @@ def start_progression():
     progression_string = ''
     for element in rand_progression:
         progression_string = progression_string + ' ' + str(element)
-    print('What number is missing in the progression?')
     print('Question:' + progression_string)
     return correct_answer
 

@@ -11,7 +11,6 @@ def start_calc():
     subtraction = operator.sub(num_1, num_2)
     question_var = [addition, multiplication, subtraction]
     correct_answer = question_var[randint(0, 2)]
-    print('What is the result of the expression?')
     if correct_answer == question_var[0]:
         print('Question:', num_1, '+', num_2)
     elif correct_answer == question_var[1]:
