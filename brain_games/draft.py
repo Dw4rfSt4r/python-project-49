@@ -1,8 +1,43 @@
 import prompt
+import operator
+from random import randint
 
 
 ROUND_NUMBER = 3
+
 user_name = prompt.string('Welcome to the Brain Games!\nMay I have your name?')
+
+
+RULES = 'What is the result of the expression?'
+
+
+def start_calc():
+    answers_and_questions = []
+    i = 0
+    while i < 3:
+        num_1 = randint(1, 100)
+        num_2 = randint(1, 100)
+        operators = ['+', '-', '*']
+        for current_operator in operators:
+            current_operator = operators[randint(0, 2)]
+            break
+        if current_operator == '+':
+            calculations = operator.add(num_1, num_2)
+            question = f'Question: {num_1} + {num_2}'
+        elif current_operator == '-':
+            question = f'Question: {num_1} - {num_2}'
+            calculations = operator.sub(num_1, num_2)
+        elif current_operator == '*':
+            question = f'Question: {num_1} * {num_2}'
+            calculations = operator.mul(num_1, num_2)
+        answer = calculations
+        answers_and_questions.append([answer, question])
+        i += 1
+    print(answers_and_questions)
+    return answers_and_questions
+
+
+answers_and_questions = start_calc()
 
 
 def welcome():
@@ -11,6 +46,8 @@ def welcome():
 
 def print_rules(RULES):
     print(RULES)
+
+
 
 
 def get_user_answer():
@@ -22,7 +59,7 @@ def compliment():
     print(f'Congratulations, {user_name}!')
 
 
-def cycle_game(answers_and_questions, RULES):
+def cycle_game():
     i = 0
     print_rules(RULES)
     while i < ROUND_NUMBER:
