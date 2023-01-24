@@ -21,7 +21,7 @@ def start_progression():
         progression_string = ''
         for element in rand_progression:
             progression_string = progression_string + ' ' + str(element)
-        question = f'Question: {progression_string}'
+        question = f'Question:{progression_string}'
         answers_and_questions.append([answer, question])
         i += 1
     return answers_and_questions
