@@ -16,15 +16,14 @@ def start_calc():
             current_operator = operators[randint(0, 2)]
             break
         if current_operator == '+':
-            calculations = operator.add(num_1, num_2)
+            answer = operator.add(num_1, num_2)
             question = f'Question: {num_1} + {num_2}'
         elif current_operator == '-':
             question = f'Question: {num_1} - {num_2}'
-            calculations = operator.sub(num_1, num_2)
+            answer = operator.sub(num_1, num_2)
         elif current_operator == '*':
             question = f'Question: {num_1} * {num_2}'
-            calculations = operator.mul(num_1, num_2)
-        answer = calculations
+            answer = operator.mul(num_1, num_2)
         answers_and_questions.append([answer, question])
         i += 1
     return answers_and_questions

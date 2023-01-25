@@ -2,7 +2,15 @@ import prompt
 
 
 ROUND_NUMBER = 3
-user_name = prompt.string('Welcome to the Brain Games!\nMay I have your name?')
+
+
+def get_user_name():
+    user_name = prompt.string('Welcome to the Brain \
+Games!\nMay I have your name?')
+    return (user_name)
+
+
+user_name = get_user_name()
 
 
 def welcome():
@@ -41,13 +49,3 @@ def cycle_game(answers_and_questions, RULES):
         i = i + counter_breaker
     if i == ROUND_NUMBER:
         compliment()
-
-
-def main():
-    user_name
-    welcome()
-    cycle_game()
-
-
-if __name__ == '__main__':
-    main()
