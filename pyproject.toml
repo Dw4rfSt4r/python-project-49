@@ -6,6 +6,7 @@ authors = ["Ivan Havinson <havinsonivan@gmail.com>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
 repository = "https://github.com/Dw4rfSt4r/python-project-49"
+classifiers = ["Topic :: Games/Entertainment"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
