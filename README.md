@@ -5,7 +5,7 @@
 
 
 
-Brain-games is a console game, whith 5 games builtin: brain-calc, brain-even, brain-gcd, brain-prime, brain-progression.
+Brain-games is a console game, with 5 games builtin: brain-calc, brain-even, brain-gcd, brain-prime, brain-progression.
 
 
 ### Installation:
