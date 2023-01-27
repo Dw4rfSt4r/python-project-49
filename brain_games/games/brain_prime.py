@@ -12,13 +12,10 @@ def is_prime(num):
 
 def start_prime():
     answers_and_questions = []
-    i = 0
-    while i < 3:
-        num = randint(2, 3391)
-        question = f'Question: {num}'
-        answer = 'yes'
-        if is_prime(num) is False:
-            answer = 'no'
-        answers_and_questions.append([answer, question])
-        i += 1
+    num = randint(2, 3391)
+    question = f'Question: {num}'
+    answer = 'yes'
+    if is_prime(num) is False:
+        answer = 'no'
+    answers_and_questions.append([answer, question])
     return answers_and_questions

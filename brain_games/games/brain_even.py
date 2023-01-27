@@ -13,14 +13,11 @@ def is_even(num):
 
 def start_even():
     answers_and_questions = []
-    i = 0
-    while i < 3:
-        num = randint(1, 100)
-        question = f'Question: {num}'
-        if is_even(num) is True:
-            answer = 'yes'
-        else:
-            answer = 'no'
-        answers_and_questions.append([answer, question])
-        i += 1
+    num = randint(1, 100)
+    question = f'Question: {num}'
+    if is_even(num) is True:
+        answer = 'yes'
+    else:
+        answer = 'no'
+    answers_and_questions.append([answer, question])
     return answers_and_questions
