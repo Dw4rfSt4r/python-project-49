@@ -5,7 +5,7 @@ from brain_games.games.brain_gcd import RULES, start_gcd
 
 def main():
     user_name
-    welcome()
+    welcome(RULES)
     ROUND_NUMBER
     RULES
     i = 0

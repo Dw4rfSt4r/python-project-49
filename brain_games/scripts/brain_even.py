@@ -5,7 +5,7 @@ from brain_games.games.brain_even import RULES, start_even
 
 def main():
     user_name
-    welcome()
+    welcome(RULES)
     ROUND_NUMBER
     RULES
     i = 0
