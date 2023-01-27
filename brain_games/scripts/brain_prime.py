@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-from brain_games.game_engine import user_name, welcome, cycle_game, ROUND_NUMBER, compliment
+from brain_games.game_engine import user_name, welcome, cycle_game,\
+    ROUND_NUMBER, compliment
 from brain_games.games.brain_prime import RULES, start_prime
 
 
