@@ -1,7 +1,7 @@
 from random import randint
 
 
-RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):
@@ -15,7 +15,7 @@ def start_prime():
     num = randint(2, 3391)
     question = f'Question: {num}'
     answer = 'yes'
-    if is_prime(num) is False:
+    if not is_prime(num):
         answer = 'no'
     answers_and_questions.append([answer, question])
     return answers_and_questions

@@ -7,15 +7,15 @@ ROUND_NUMBER = 3
 def get_user_name():
     user_name = prompt.string('Welcome to the Brain \
 Games!\nMay I have your name?')
-    return (user_name)
+    return user_name
 
 
 user_name = get_user_name()
 
 
-def welcome(RULES):
+def welcome(rules):
     print('Hello, ' + user_name + '!')
-    print(RULES)
+    print(rules)
 
 
 def get_user_answer():
@@ -27,7 +27,7 @@ def compliment():
     print(f'Congratulations, {user_name}!')
 
 
-def cycle_game(answers_and_questions, RULES):
+def cycle_game(answers_and_questions, rules):
     question = answers_and_questions[0][1]
     print(question)
     correct_answer = answers_and_questions[0][0]
