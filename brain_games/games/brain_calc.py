@@ -1,5 +1,5 @@
-import operator
 from random import randint
+import operator
 
 
 rules = 'What is the result of the expression?'
