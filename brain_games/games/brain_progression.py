@@ -3,6 +3,7 @@ from random import randint
 
 rules = 'What number is missing in the progression?'
 
+
 def random_progression():
     rand_progression_start = randint(1, 10)
     rand_progression_stop = rand_progression_start + 10
