@@ -15,7 +15,7 @@ def start_prime():
     num = randint(2, 3391)
     question = f'Question: {num}'
     answer = 'yes'
-    if not is_prime(num) is False:
+    if not is_prime(num) is True:
         answer = 'no'
     answers_and_questions.append([answer, question])
     return answers_and_questions
