@@ -13,11 +13,8 @@ Games!\nMay I have your name?')
 user_name = get_user_name()
 
 
-def welcome():
+def welcome(RULES):
     print('Hello, ' + user_name + '!')
-
-
-def print_rules(RULES):
     print(RULES)
 
 
