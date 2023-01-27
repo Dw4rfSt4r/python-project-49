@@ -7,7 +7,6 @@ def main():
     user_name
     welcome(RULES)
     ROUND_NUMBER
-    RULES
     i = 0
     result = True
     while i < ROUND_NUMBER and result is True:
