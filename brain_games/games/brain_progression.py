@@ -5,14 +5,11 @@ rules = 'What number is missing in the progression?'
 
 
 def random_progression():
-    rand_progression_start = randint(1, 10)
-    rand_progression_stop = rand_progression_start + 10
+    start = randint(1, 10)
+    stop = start + 200
     step = randint(1, 10)
-    rand_progression = []
-    for element in range(rand_progression_start, rand_progression_stop):
-        rand_progression.append(rand_progression_start)
-        rand_progression_start = rand_progression_start + step
-    return rand_progression
+    rand_progression = range(start, stop, step)
+    return list(rand_progression[:10])
 
 
 def start_progression():
