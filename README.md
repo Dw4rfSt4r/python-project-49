@@ -13,6 +13,8 @@ Brain-games is a console game, with 5 games builtin: brain-calc, brain-even, bra
 
 make install - to install dependencies make-package install - to install hexlet-code
 
+Dev-dependences installation: poetry add --group dev flake8
+
 
 ### brain-even gameplay:
 [![asciicast](https://asciinema.org/a/xKKMPhLcs9lrcRhHF47vSCMdV.svg)](https://asciinema.org/a/xKKMPhLcs9lrcRhHF47vSCMdV)
