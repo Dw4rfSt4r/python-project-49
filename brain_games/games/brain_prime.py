@@ -12,10 +12,10 @@ def is_prime(num):
 
 def start_prime():
     answers_and_questions = []
-    num = randint(2, 3391)
+    num = randint(2, 100)
     question = f'Question: {num}'
     answer = 'yes'
-    if not is_prime(num) is True:
+    if is_prime(num) is False:
         answer = 'no'
     answers_and_questions.append([answer, question])
     return answers_and_questions
