@@ -4,17 +4,14 @@ import prompt
 ROUND_NUMBER = 3
 
 
-def get_user_name():
+def welcome():
     user_name = prompt.string('Welcome to the Brain \
 Games!\nMay I have your name?')
+    print('Hello, ' + user_name + '!')
     return user_name
 
 
-user_name = get_user_name()
-
-
-def welcome(rules):
-    print('Hello, ' + user_name + '!')
+def print_rules(rules):
     print(rules)
 
 
@@ -23,19 +20,28 @@ def get_user_answer():
     return user_answer
 
 
-def compliment():
+def compliment(user_name):
     print(f'Congratulations, {user_name}!')
 
 
-def cycle_game(answers_and_questions, rules):
-    question = answers_and_questions[0][1]
-    print(question)
-    correct_answer = answers_and_questions[0][0]
-    user_answer = get_user_answer()
-    if user_answer == str(correct_answer):
-        print('Correct!')
-        return True
-    else:
-        print(f'{user_answer} is wrong answer ;(. Correct answer was \
+def cycle_game(return_foo, rules):
+    user_name = welcome()
+    i = 0
+    print_rules(rules)
+    while i < ROUND_NUMBER:
+        answers_and_questions = return_foo()
+        question = answers_and_questions[0][1]
+        print(question)
+        correct_answer = answers_and_questions[0][0]
+        user_answer = get_user_answer()
+        if user_answer == str(correct_answer):
+            print('Correct!')
+            counter_breaker = True
+        else:
+            print(f'{user_answer} is wrong answer ;(. Correct answer was \
 {correct_answer}. Let\'s try again, {user_name}!')
-        return False
+            counter_breaker = False
+            break
+        i = i + counter_breaker
+    if i == ROUND_NUMBER:
+        compliment(user_name)
