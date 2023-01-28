@@ -5,22 +5,27 @@
 
 
 
-Brain-games is a console game, with 5 games builtin: brain-calc, brain-even, brain-gcd, brain-prime, brain-progression.
+Brain-games is a console game, with 5 games builtin: 
+- brain-calc
+-  brain-even
+-  brain-gcd
+- brain-prime
+- brain-progression
 
 
 ### Installation:
 [![asciicast](https://asciinema.org/a/8O41n2ya0Z6IRscyIN5kkVwoc.svg)](https://asciinema.org/a/8O41n2ya0Z6IRscyIN5kkVwoc)
 
-make install - to install dependencies 
-make-package install - to install hexlet-code
+- make install - to install dependencies 
+- make-package install - to install hexlet-code
 
-Dev-dependences installation: poetry add --group dev flake8
+- Dev-dependences installation: poetry add --group dev flake8
 
 
 ### brain-even gameplay:
 [![asciicast](https://asciinema.org/a/xKKMPhLcs9lrcRhHF47vSCMdV.svg)](https://asciinema.org/a/xKKMPhLcs9lrcRhHF47vSCMdV)
 
-Brain-even shows user a number, asks user to check if the number is even, asks user to enter “yes” if the number is even otherwise “no”. User has 3 attempts to win the game. Game ends if user makes 1 mistake
+Brain-even shows user a number asks user to check if the number is even, asks user to enter “yes” if the number is even otherwise “no”. User has 3 attempts to win the game. Game ends if user makes 1 mistake
 
 
 ### brain-calc gameplay:
