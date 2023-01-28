@@ -11,10 +11,6 @@ Games!\nMay I have your name?')
     return user_name
 
 
-def print_rules(rules):
-    print(rules)
-
-
 def get_user_answer():
     user_answer = prompt.string('Your answer:')
     return user_answer
@@ -27,7 +23,7 @@ def compliment(user_name):
 def play_game(return_foo, rules):
     user_name = welcome()
     i = 0
-    print_rules(rules)
+    print(rules)
     while i < ROUND_NUMBER:
         answers_and_questions = return_foo()
         question = answers_and_questions[0][1]
