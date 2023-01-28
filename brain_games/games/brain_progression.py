@@ -21,12 +21,9 @@ def start_progression():
     correct_element = randint(0, 9)
     answer = str(rand_progression[correct_element])
     rand_progression[correct_element] = '..'
-    progression_list = []
-    for element in rand_progression:
-        element = str(element)
-        progression_list.append(element)
+    rand_progression = map(str, rand_progression)
     separator = " "
-    progression_string = separator.join(progression_list)
+    progression_string = separator.join(rand_progression)
     question = f'Question: {progression_string}'
     answers_and_questions.append([answer, question])
     return answers_and_questions
