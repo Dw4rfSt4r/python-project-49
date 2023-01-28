@@ -24,7 +24,7 @@ def compliment(user_name):
     print(f'Congratulations, {user_name}!')
 
 
-def cycle_game(return_foo, rules):
+def play_game(return_foo, rules):
     user_name = welcome()
     i = 0
     print_rules(rules)
@@ -36,12 +36,10 @@ def cycle_game(return_foo, rules):
         user_answer = get_user_answer()
         if user_answer == str(correct_answer):
             print('Correct!')
-            counter_breaker = True
+            i += 1
         else:
             print(f'{user_answer} is wrong answer ;(. Correct answer was \
 {correct_answer}. Let\'s try again, {user_name}!')
-            counter_breaker = False
             break
-        i = i + counter_breaker
     if i == ROUND_NUMBER:
         compliment(user_name)

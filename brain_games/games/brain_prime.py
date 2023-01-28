@@ -17,5 +17,6 @@ def start_prime():
     answer = 'yes'
     if is_prime(num) is False:
         answer = 'no'
+    print(answer)
     answers_and_questions.append([answer, question])
     return answers_and_questions
