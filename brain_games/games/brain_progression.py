@@ -21,5 +21,5 @@ def get_answer_and_question():
     separator = " "
     progression_string = separator.join(random_progression)
     question = f'Question: {progression_string}'
-    answer_and_question = (answer, question)
+    answer_and_question = answer, question
     return answer_and_question

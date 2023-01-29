@@ -14,5 +14,5 @@ def get_answer_and_question():
     operation, symbol = choice(operators_list)
     answer = operation(num_1, num_2)
     question = f'Question: {num_1} {symbol} {num_2}'
-    answer_and_question = (answer, question)
+    answer_and_question = answer, question
     return answer_and_question

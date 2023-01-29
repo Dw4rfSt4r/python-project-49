@@ -4,7 +4,7 @@ from brain_games.games.brain_prime import get_answer_and_question, RULES
 
 
 def main():
-    play(give_answer_and_question=get_answer_and_question, rules=RULES)
+    play(take_answer_and_question=get_answer_and_question, rules=RULES)
 
 
 if __name__ == '__main__':

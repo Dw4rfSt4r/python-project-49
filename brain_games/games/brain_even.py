@@ -18,5 +18,5 @@ def get_answer_and_question():
         answer = 'yes'
     else:
         answer = 'no'
-    answer_and_question = (answer, question)
+    answer_and_question = answer, question
     return answer_and_question

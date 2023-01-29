@@ -16,12 +16,12 @@ def get_user_answer():
     return user_answer
 
 
-def play(give_answer_and_question, rules):
+def play(take_answer_and_question, rules):
     user_name = welcome()
     i = 0
     print(rules)
     while i < ROUND_NUMBER:
-        answer_and_question = give_answer_and_question()
+        answer_and_question = take_answer_and_question()
         question = answer_and_question[1]
         print(question)
         correct_answer = answer_and_question[0]

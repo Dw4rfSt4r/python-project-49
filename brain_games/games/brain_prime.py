@@ -1,7 +1,7 @@
 from random import randint
 
 
-RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULES = 'Answer "yes" if taken number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):
@@ -18,5 +18,5 @@ def get_answer_and_question():
         answer = 'yes'
     else:
         answer = 'no'
-    answer_and_question = (answer, question)
+    answer_and_question = answer, question
     return answer_and_question
