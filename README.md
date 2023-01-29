@@ -64,4 +64,4 @@ Brain-games is a console game, with 5 games builtin:
 - Brain-prime shows user a number, asks if the number is prime. 
 - Asks user to enter “yes” if the number is even otherwise “no”. 
 - User has 3 attempts to win the game. 
-- Game ends if user makes 1 mistake
+- Game ends if user makes 1 mistake.
