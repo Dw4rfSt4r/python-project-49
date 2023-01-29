@@ -1,27 +1,19 @@
 from random import randint
+from random import choice
 import operator
 
 
 rules = 'What is the result of the expression?'
 
 
-def rand_operator():
-    operators = ['+', '-', '*']
-    random_operator = operators[randint(0, 2)]
-    return random_operator
-
-
 def start_calc():
     answers_and_questions = []
-    num_1 = randint(1, 100)
-    num_2 = randint(1, 100)
-    random_operator = rand_operator()
-    if random_operator == '+':
-        answer = operator.add(num_1, num_2)
-    elif random_operator == '-':
-        answer = operator.sub(num_1, num_2)
-    elif random_operator == '*':
-        answer = operator.mul(num_1, num_2)
-    question = f'Question: {num_1} {random_operator} {num_2}'
+    num_1 = randint(1, 20)
+    num_2 = randint(1, 20)
+    rand_calculations = [
+        [operator.sub, '-'], [operator.add, '+'], [operator.mul, '*']]
+    random_operator = choice(rand_calculations)
+    answer = random_operator[0](num_1, num_2)
+    question = f'Question: {num_1} {random_operator[1]} {num_2}'
     answers_and_questions.append([answer, question])
     return answers_and_questions
