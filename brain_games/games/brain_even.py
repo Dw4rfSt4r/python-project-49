@@ -1,7 +1,7 @@
 from random import randint
 
 
-rules = 'Answer "yes" if the number is even, otherwise answer "no".'
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(num):
@@ -11,13 +11,12 @@ def is_even(num):
         return False
 
 
-def start_even():
-    answers_and_questions = []
+def get_answer_and_question():
     num = randint(1, 100)
     question = f'Question: {num}'
     if is_even(num) is True:
         answer = 'yes'
     else:
         answer = 'no'
-    answers_and_questions.append([answer, question])
-    return answers_and_questions
+    answer_and_question = (answer, question)
+    return answer_and_question

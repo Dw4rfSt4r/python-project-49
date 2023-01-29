@@ -2,14 +2,13 @@ from math import gcd
 from random import randint
 
 
-rules = 'Find the greatest common divisor of given numbers.'
+RULES = 'Find the greatest common divisor of given numbers.'
 
 
-def start_gcd():
-    answers_and_questions = []
+def get_answer_and_question():
     num_1 = randint(1, 100)
     num_2 = randint(1, 100)
     answer = gcd(num_1, num_2)
     question = f'Question: {num_1} {num_2}'
-    answers_and_questions.append([answer, question])
-    return answers_and_questions
+    answer_and_question = (answer, question)
+    return answer_and_question

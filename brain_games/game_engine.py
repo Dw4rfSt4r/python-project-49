@@ -16,15 +16,15 @@ def get_user_answer():
     return user_answer
 
 
-def play_game(game, rules):
+def play(give_answer_and_question, rules):
     user_name = welcome()
     i = 0
     print(rules)
     while i < ROUND_NUMBER:
-        answers_and_questions = game()
-        question = answers_and_questions[0][1]
+        answer_and_question = give_answer_and_question()
+        question = answer_and_question[1]
         print(question)
-        correct_answer = answers_and_questions[0][0]
+        correct_answer = answer_and_question[0]
         user_answer = get_user_answer()
         if user_answer == str(correct_answer):
             print('Correct!')
