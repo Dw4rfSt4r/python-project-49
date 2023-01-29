@@ -16,16 +16,12 @@ def get_user_answer():
     return user_answer
 
 
-def compliment(user_name):
-    print(f'Congratulations, {user_name}!')
-
-
-def play_game(return_foo, rules):
+def play_game(game, rules):
     user_name = welcome()
     i = 0
     print(rules)
     while i < ROUND_NUMBER:
-        answers_and_questions = return_foo()
+        answers_and_questions = game()
         question = answers_and_questions[0][1]
         print(question)
         correct_answer = answers_and_questions[0][0]
@@ -38,4 +34,4 @@ def play_game(return_foo, rules):
 {correct_answer}. Let\'s try again, {user_name}!')
             break
     if i == ROUND_NUMBER:
-        compliment(user_name)
+        print(f'Congratulations, {user_name}!')

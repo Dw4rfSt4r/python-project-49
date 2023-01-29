@@ -4,7 +4,7 @@ from brain_games.games.brain_even import start_even, rules
 
 
 def main():
-    play_game(return_foo=start_even, rules=rules)
+    play_game(game=start_even, rules=rules)
 
 
 if __name__ == '__main__':

@@ -4,7 +4,7 @@ from brain_games.games.brain_gcd import start_gcd, rules
 
 
 def main():
-    play_game(return_foo=start_gcd, rules=rules)
+    play_game(game=start_gcd, rules=rules)
 
 
 if __name__ == '__main__':

@@ -10,10 +10,10 @@ def start_calc():
     answers_and_questions = []
     num_1 = randint(1, 20)
     num_2 = randint(1, 20)
-    rand_calculations = [
+    rand_operator_list = [
         [operator.sub, '-'], [operator.add, '+'], [operator.mul, '*']]
-    random_operator = choice(rand_calculations)
-    answer = random_operator[0](num_1, num_2)
-    question = f'Question: {num_1} {random_operator[1]} {num_2}'
+    operator_foo_and_str = choice(rand_operator_list)
+    answer = operator_foo_and_str[0](num_1, num_2)
+    question = f'Question: {num_1} {operator_foo_and_str[1]} {num_2}'
     answers_and_questions.append([answer, question])
     return answers_and_questions
